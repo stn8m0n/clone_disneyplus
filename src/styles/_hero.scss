@@ -2,8 +2,26 @@
     padding: 5.6vw;
     min-height: 80vh; //vw=80% da área visivel
     background-image: url(../images/hero_desktop.jpeg);
-    background-position: 50%;
+    text-align: center;
+    background-position: 20%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    &__content{
+    max-width: 640px;
+
+        &__branching{
+            max-width: 320px;
+            margin: 0 auto 38px;
+        }
+
+        .title--small{
+            margin-bottom: 64px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+   }
 }
