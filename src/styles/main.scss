@@ -14,15 +14,10 @@ body {
     background-color: $corDeFundo;
 }
 
-
 @mixin text ($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-}
-
-@mixin title ($fontSize:28px){
-    @include text($fontSize);
-    color: $corTextoPrincipal
+    color: $corTextoPrincipal;
 }
 
 @mixin title ($fontSize:40px) {
@@ -54,7 +49,7 @@ body {
     @include title(28px);
 }
 
-.link-tex {
+.link-text {
     @include text(18px);
     color:  $cortextoSecundario;
     text-decoration: underline;
