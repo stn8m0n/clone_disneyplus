@@ -5,7 +5,55 @@
 }
 
 $corDeFundo: #040714;
+$corTextoPrincipal: silver;
+$cortextoSecundario: #f9f9f9
+
 
 body{
     background-color: $corDeFundo;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+@mixin title ($fontSize:28px){
+    @include text($fontSize);
+    color: $corTextoPrincipal
+}
+
+@mixin title ($fontSize:40px) {
+    @include text($fontSize);
+    color: $cortextoSecundario
+}
+
+.text--big{
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title();
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.link-tex {
+    @include text(18px);
+    color:  $cortextoSecundario;
+    text-decoration: underline;
 }
