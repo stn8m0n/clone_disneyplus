@@ -1,3 +1,5 @@
+@use 'hero';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +8,14 @@
 
 $corDeFundo: #040714;
 $corTextoPrincipal: silver;
-$cortextoSecundario: #f9f9f9
+$cortextoSecundario: #f9f9f9;
 
-
-body{
+body {
     background-color: $corDeFundo;
 }
 
-@mixin text($fontSize: 16px){
+
+@mixin text ($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
 }
