@@ -22,4 +22,4 @@ exports.watch = function(){
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
 };
 
-//parei no 25:46
+//esta branch eu apenas rodei o build, a mesma estava sem o dist.
