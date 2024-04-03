@@ -3,6 +3,7 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
 
 @font-face{
     font-family: Avenir;
@@ -42,8 +43,16 @@ body {
     @include text(18px);
 }
 
+.space{
+    padding-bottom: 24px;
+}
+
 .text{
     @include text;
+
+    a{
+        color: #fff;
+    }
 }
 
 .text--small{
