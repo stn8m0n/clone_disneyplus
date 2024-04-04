@@ -1,7 +1,19 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll('[data-tab-button]');
     const questions = document.querySelectorAll('[data-faq-question]');
+
+    const heroSection = document.querySelectorAll('.hero');
+    const alturaHero = heroSection.clienteHeight;
+
+    window.addEventListener('scrool', function(){
+        const posicaoAtual = window.scrollY;
+
+        if(posicaoAtual < alturaHero){
+            console.log("exibe os elementos")
+        }
+    })
     
+    //Seção de atrações, programação da abas
     for (let i = 0; i < buttons.length; i++){
         buttons[i].addEventListener('click', function(botao){
             const abaAlvo = botao.target.dataset.tabButton;
@@ -12,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function(){
             botao.target.classList.add('shows__tabs__button--is-active');
         })
     }
-
+    
+    //Seção FAQ accordeon
     for(let i = 0; i < questions.length; i++){
         questions[i].addEventListener('click', abreOuFechaResposta)
     }
@@ -41,3 +54,4 @@ function escodeTodasAbas (){
 
     }
 }
+//parei no 30:25
