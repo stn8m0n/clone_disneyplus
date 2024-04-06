@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const posicaoAtual = window.scrollY;
 
         if(posicaoAtual < alturaHero){
-            ocultarElementosDoHeader();
+            ocultaElementosDoHeader();
         } else {
             exibeElementosDoHeader();
         }
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 
-function ocultarElementosDoHeader(){
+function ocultaElementosDoHeader(){
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
 }

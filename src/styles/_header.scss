@@ -5,12 +5,12 @@
     top: 0;
     left: 0;
     background-color: variaveis.$corDeFundo;
-    transition: background-color .5s ease;
+    transition: backgroundcolor .5s ease;
     z-index: 1;
 
-    &--is-hidden{
+    &--is-hidden {
         background-color: transparent;
-        transition: background-color .5s ease;
+        transition: backgroundcolor .5s ease;
 
         .header{
             &__logo, &__links__item:first-child{
