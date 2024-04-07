@@ -80,7 +80,7 @@ body {
     @include title(44px);
 
     @media (max-width: 768px){
-        @include text (15px);
+        @include title (26px);
     }
 }
 
@@ -198,3 +198,5 @@ body {
         }
     }
 }
+
+//parei no 11:29 - 21.11
