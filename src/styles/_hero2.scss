@@ -1,6 +1,6 @@
 @use 'variaveis';
 
-.hero {
+.hero2 {
     padding: 5.6vw;
     min-height: 80vh; //vw=80% da área visivel
     background-image: url(../images/desencantada_gd.jpeg);
@@ -10,11 +10,11 @@
     //position: relative;
 
     @media (max-width: 768px) {
-        background-image: url(../images/hero_celular.jpeg);
+        background-image: url(../images/desencantada_cel.jpg);
         padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -55px;
+        //margin-top: -55px;
     }
 
     .button{
@@ -65,6 +65,53 @@
                 width: calc(50% - 12px);
 
                 @media (max-width: 768px){
+                    width: 90%;
+                    margin-bottom: 24px;
+                }
+
+                img{
+                    max-height: 60px;
+                }
+            }
+        }
+   }
+
+   &__content2{
+    max-width: 640px;
+
+        &__branching2{
+            max-width: 320px;
+            margin: 0 auto 38px;
+
+            @media (max-width: 768px){
+                max-width: 10                   0px;
+            }
+
+        }
+
+        .title--small{
+            margin-bottom: 64px;
+            
+            &-l{
+                display: flex;
+            }
+        
+        
+        }
+
+
+        &__combos{
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 768px){
+                display: block;
+            }
+
+            &__combo{
+                width: calc(50% - 12px);
+
+                @media (max-width: 768px){
                     width: 100%;
                     margin-bottom: 24px;
                 }
@@ -74,5 +121,6 @@
                 }
             }
         }
+
    }
 }
