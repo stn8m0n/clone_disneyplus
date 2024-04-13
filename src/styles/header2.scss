@@ -1,0 +1,51 @@
+
+@use 'variaveis';
+
+.header2 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDeFundo;
+    transition: background-color .5s ease;
+    z-index: 1;
+    
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width: 768px) {
+            padding: 0 12px 0 20px;
+        }
+    }
+
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+
+        @media (max-width: 768px) {
+            max-width: 64px;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            text-transform: uppercase;
+            color: variaveis.$corMenu;
+            text-decoration: none;
+            padding: 10px;
+
+            @media (max-width: 768px) {
+                &:nth-last-child(-n+4) {
+                    display: none;
+                    padding: 3px;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
